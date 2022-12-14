@@ -17,9 +17,8 @@ let myList = '<ul>';
 let market = '';
 let i = 0;
 while (i < shop.length) {
+    market = shop[i];
     i++;
-    market = shop.length[i];
-    console.log(market)
     myList += `<li>${market}</li>`;
 
 }
