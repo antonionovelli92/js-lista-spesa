@@ -9,5 +9,19 @@ Consigli:
 - Ricordiamoci di inizializzare le variabili  che servono alla condizione FUORI dal ciclo while, altrimenti verranno azzerate ad ogni ciclo
 - Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
 */
-
+const listElement = document.getElementById('list')
 const shop = ['Pomodoro', 'Latte', 'Pane', 'Carne'];
+// console.log(shop);
+
+let myList = '<ul>';
+let market = '';
+let i = 0;
+while (i < shop.length) {
+    i++;
+    market = shop.length[i];
+    console.log(market)
+    myList += `<li>${market}</li>`;
+
+}
+myList += '</ul>';
+listElement.innerHTML = myList;
